@@ -1,0 +1,8 @@
+<form name="userForm">
+    <input type="text" name="username" ng-model="user.username" ng-minlength="3" ng-maxlength="8" required>
+    <div ng-messages="userForm.name.$error" style="color:maroon">
+        <p style="color:maroon" ng-message="minlength">Your name is too short.</p>
+        <p style="color:maroon" ng-message="maxlength">Your name is too long.</p>
+        <p ng-message="required">Your name is required.</p>
+    </div>
+</form>

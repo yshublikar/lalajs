@@ -1,0 +1,48 @@
+<div class="container" ng-app="registration">
+    <div class="row centered-form">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Registration form</h3>
+                </div>
+                <form name="reg">
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" class="form-control " placeholder="First Name" required>
+                                    </div>
+                                    <div ng-messages="reg.first_name.$error" style="color:maroon">
+                                        <div ng-message="required">You did not enter a field</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" class="form-control " placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" class="form-control " placeholder="Email Address">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" class="form-control " placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Register" class="btn btn-info btn-block">
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
