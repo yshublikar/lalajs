@@ -1,6 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
+
 angular.module('myApp', [
   'ui.router',
   'ngMessages'
@@ -15,8 +16,6 @@ config(function($stateProvider, $urlRouterProvider) {
  .state('registration', {
     name: 'registration',
     templateUrl: 'view2/registration.html'
-  })
-
+  })	
 });
-
 
